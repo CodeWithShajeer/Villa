@@ -2,9 +2,9 @@
 
 namespace Villa_Api.DTOs
 {
-    public class VillaDto
+    public class VillaCreateDto
     {
-        public int Id { get; set; }
+        
         [Required]
         [MaxLength(40)]
         public string Name { get; set; }
@@ -16,6 +16,6 @@ namespace Villa_Api.DTOs
         public int Occupency { get; set; }
         public int Sqft { get; set; }
         public string ImageUrl { get; set; }
-        public string Amenity { get; set; } 
+        public string Amenity { get; set; }
     }
 }
